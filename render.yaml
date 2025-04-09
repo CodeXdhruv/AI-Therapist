@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ai-therapist-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
