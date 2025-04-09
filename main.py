@@ -7,9 +7,15 @@ import google.generativeai as genai
 import numpy as np
 import queue
 import threading
+from dotenv import load_dotenv
+import os
 
-# Set your Gemini API key here
-genai.configure(api_key="AIzaSyCZplIDyFE70eJLrCbEVl0Zi1y-k8VYLWI")
+# Load environment variables
+load_dotenv()
+
+# Update API key configuration
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
+
 
 # === Recording Settings ===
 FORMAT = pyaudio.paFloat32
@@ -176,5 +182,5 @@ def speak():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=int(os.getenv('PORT', 5000)))
     run_ai_therapist()
