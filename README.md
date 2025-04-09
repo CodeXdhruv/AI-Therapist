@@ -25,6 +25,7 @@ AI Therapist is a cognitive behavioral therapy chatbot that interacts with users
 ├── main.py           # Backend Flask server, AI logic, and voice processing
 
 1. Clone the repository
+
 git clone https://github.com/yourusername/ai-therapist-chatbot.git
 cd ai-therapist-chatbot
 
