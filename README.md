@@ -1,5 +1,4 @@
-# AI-Therapist
-A compassionate AI chatbot offering mental health support through thoughtful conversations and voice interactions.
+
 🧠 AI Therapist Chatbot
 AI Therapist is a cognitive behavioral therapy chatbot that interacts with users via text or voice to provide supportive, brief, and targeted mental health assistance. The chatbot offers a clean, modern web interface for interaction and leverages powerful AI technologies like Google's Gemini Pro and OpenAI Whisper for speech recognition and response generation.
 
