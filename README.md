@@ -27,22 +27,24 @@ AI Therapist is a cognitive behavioral therapy chatbot that interacts with users
 1. Clone the repository
 
 git clone https://github.com/yourusername/ai-therapist-chatbot.git
+
 cd ai-therapist-chatbot
 
 3. Install dependencies
 pip install flask flask-cors pyttsx3 openai-whisper google-generativeai pyaudio numpy gtts playsound
 ⚠️ You may also need system dependencies for pyaudio. Use:
-sudo apt-get install portaudio19-dev (Linux)
-brew install portaudio (macOS)
 
-4. Add your Gemini API key
+  sudo apt-get install portaudio19-dev (Linux)
+  brew install portaudio (macOS)
+
+5. Add your Gemini API key
 Edit main.py and update:
 genai.configure(api_key="YOUR_API_KEY")
 
-5. Run the server
-python main.py
-6. Open index.html in your browser
-Use Live Server in VSCode or host it with any static server tool.
+6. Run the server
+  python main.py
+7. Open index.html in your browser
+  Use Live Server in VSCode or host it with any static server tool.
 
 🧪 Demo Walkthrough
 Register or log in on the webpage.
